@@ -28,16 +28,22 @@
       position: absolute;
       right: 0;
       top: 0;
-      border: 1px solid darkcyan;
       display: flex;
       flex-direction: column;
     }
-    .actions>button{
+    .actions > button{
       margin: 10px;
       background: gainsboro;
       padding: 6px 15px;
       border-radius: 5px;
-      box-shadow: 1px 1px 1px 0.3px rgba(red, green, blue, 0.3)
+      border: none;
+      cursor: pointer;
+    }
+    .actions> .active{
+      background: red;
+    }
+    .actions>button:focus{
+      outline:none;
     }
 /*     
     .preview{
